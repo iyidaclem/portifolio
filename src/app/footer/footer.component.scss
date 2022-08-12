@@ -1,0 +1,77 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 25%;
+    left: 84%;
+    overflow: hidden;
+    z-index: 1000;
+
+    @media (max-width:767px) {
+    display: block;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    left: 0%;
+    top:87%;
+    overflow: hidden;
+    .btncontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #111111;
+        padding: 1%;
+        .btn-group{
+            display: none;
+        }
+
+    }
+    }
+
+}
+.mainbtn{
+    display: flex;
+     flex-direction: row;
+     font-weight: 900;
+     text-transform: uppercase;
+     color:rgb(245, 233, 233);
+     cursor: pointer;
+   font-family: 'Poppins', sans-serif;
+   .btn-group{
+       visibility: hidden;
+       height: 50px;
+       width: 150px;
+       align-items: center;
+       justify-items: center;
+       border: 1px solid #FFB400;
+       padding: 6px;
+       padding-left: 1%;
+       padding-right: 50px;
+       border-radius: 15px;
+        
+   }
+
+   .btnend{
+       display: flex;
+       flex-direction: row;
+       border-radius: 100%;
+       width: 50px;
+       height: 50px;
+       align-items: center;
+       justify-items: center;
+       justify-content: center;
+       margin-left: -30px;
+       color: white;
+       z-index: 1;
+      
+   }
+   &:hover{
+       .btnend, .btn-group{
+       background-color: #FFB400;
+       transition: 0.3s;
+       visibility: visible;
+       border-radius: 15px;
+       }
+   }     
+}
+
