@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 25%;
+    bottom: 25%;
     left: 84%;
     overflow: hidden;
     z-index: 1000;
@@ -10,10 +10,9 @@
     @media (max-width:767px) {
     display: block;
     flex-direction: row;
-    position: fixed;
-    bottom: 0px;
+    position: fixed!important;
+    bottom: 0%;
     left: 0%;
-    top:87%;
     overflow: hidden;
     .btncontainer{
         display: flex;
